@@ -88,36 +88,26 @@ svg {
 }
 
 /* Universal */
-.container {
-    margin: 0 20%;
+* {
+    font-family: var(--ff-primary);
 }
+
+button {
+    font-weight: var(--fw-ebold);
+    color:var(--text-t-color);
+    background-color: var(--tertiary-color);
+    margin-top: 10px;
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+}
+
 
 section {
     height: 50vh;
 }
 
-/* font */
-.logo {
-    font-family: var(--ff-primary);
-    font-size: var(--fs-mid);
-    font-weight:var(--fw-ebold);
-    color: var(--text-p-color);
-}
-
-nav a {
-    font-family: var(--ff-primary);
-    font-size: var(--fs-sml);
-    color:var(--text-t-color);
-}
-
-button {
-    font-family: var(--ff-primary);
-    font-weight: var(--fw-ebold);
-    color:var(--text-t-color) 
-}
-
 h1 {
-    font-family: var(--ff-primary);
     font-size: var(--fs-ultra);
     font-weight: var(--fw-ebold);
     color:var(--text-p-color);
@@ -125,64 +115,21 @@ h1 {
 }
 
 h3 {
-    font-family: var(--ff-primary);
     font-size: var(--fs-big);
     font-weight: var(--fw-ebold);
     color: var(--text-s-color);
 }
 
 h4 {
-    font-family: var(--ff-primary);
     font-size: var(--fs-mid);
     font-weight: var(--fw-ebold);
     color:var(--text-p-color)
 }
-#hero-section p {
-    font-family: var(--ff-primary);
-    font-size:var(--fs-sml);
-    color:var(--text-t-color);
-    line-height: 1.2;
+
+.container {
+    margin: 0 20%;
 }
 
-#hero-section span {
-    font-family: var(--ff-primary);
-    font-size: var(--fs-sml);
-    color:var(--text-t-color)
-}
-
-#service-section p {
-    font-family: var(--ff-primary);
-    font-size: var(--fs-sml);
-    color: var(--text-s-color)
-}
-
-#testimonial-section p {
-    font-family: var(--ff-primary);
-    font-size: var(--fs-big);
-    font-style: italic;
-    font-weight: var(--fw-light);
-    color: var(--text-s-color);
-    word-spacing: 1px;
-    line-height: 1.2;
-}
-
-#testimonial-section .author {
-    font-size: var(--fs-mid);
-    font-weight: var(--fw-ebold);
-    font-family: var(--ff-primary);
-}
-
-#cta-section p {
-    font-family: var(--ff-primary);
-    font-size: var(--fs-sml);
-    color:var(--text-t-color);
-}
-
-#primary-footer a{
-    font-family: var(--ff-primary);
-    font-size: var(--fs-sml);
-    color: var(--text-p-color);
-}
 
 /* hero-section start */
 #hero-section {
@@ -196,6 +143,12 @@ h4 {
     justify-content: space-between;
 }
 
+#hero-section nav .logo {
+    font-size: var(--fs-mid);
+    font-weight:var(--fw-ebold);
+    color: var(--text-p-color);
+}
+
 #hero-section nav ul {
     list-style: none;
     display:flex;
@@ -204,6 +157,8 @@ h4 {
 
 #hero-section nav li a {
     text-decoration: none;
+    font-size: var(--fs-sml);
+    color:var(--text-t-color);
 }
 
 #hero-section .hero-box {
@@ -217,13 +172,14 @@ h4 {
     flex:1;
 }
 
+#hero-section .hero-content p {
+    font-size:var(--fs-sml);
+    color:var(--text-t-color);
+    line-height: 1.2;
+}
+
 #hero-section .hero-content button {
-    background-color: var(--tertiary-color);
-    margin-top: 10px;
-    height: 40px;
-    width: 120px;
     border:none;
-    border-radius: 10px;
 }
 
 #hero-section .hero-box .hero-img {
@@ -241,6 +197,8 @@ h4 {
     display:flex;
     align-items: center;
     justify-content: center;
+    font-size: var(--fs-sml);
+    color:var(--text-t-color)
 }
 
 #hero-section .hero-img img {
@@ -256,6 +214,7 @@ h4 {
 #service-section h3 {
     text-align: center;
 }
+
 
 #service-section .service-container {
     margin-top: 50px;
@@ -274,6 +233,8 @@ h4 {
 #service-section .service-container p {
     margin-top: 10px; 
     text-align: center;
+    font-size: var(--fs-sml);
+    color: var(--text-s-color);
 }
 /* service-section end */
 
@@ -287,11 +248,19 @@ h4 {
 
 #testimonial-section p {
     text-align:justify;
+    font-size: var(--fs-big);
+    font-style: italic;
+    font-weight: var(--fw-light);
+    color: var(--text-s-color);
+    word-spacing: 1px;
+    line-height: 1.2;
 }
 
 #testimonial-section .author {
     display:block;
     text-align: end;
+    font-size: var(--fs-mid);
+    font-weight: var(--fw-ebold);
 }
 /* testimonial-section end */
 
@@ -313,13 +282,13 @@ h4 {
     border-radius: 10px;
 }
 
+#cta-section .cta-content p {
+    font-size: var(--fs-sml);
+    color:var(--text-t-color);
+}
+
 #cta-section button {
-    background-color: var(--tertiary-color);
-    margin-top: 10px;
-    height: 40px;
-    width: 120px;
     border: 2px solid var(--text-p-color);
-    border-radius: 10px;
 }
 /* cta-section end */
 
@@ -335,5 +304,7 @@ h4 {
 
 #primary-footer a {
     text-decoration: none;
+    font-size: var(--fs-sml);
+    color: var(--text-p-color);
 }
 /* footer end */
