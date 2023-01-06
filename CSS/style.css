@@ -1,0 +1,100 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin 
+  NOTE - font: inherit; property is taking away all default boldness and size of font tags like heading tags.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html, 
+body {
+    height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+/* @media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+} */
+
+:root {
+    --primary-color: #1F2937;
+    --secondry-color: #E5E7EB;
+    --tertiary-color: #3882F6;
+}
+
+/* Universal */
+
+.container {
+    margin: 0 14%;
+}
+
+section {
+    height: 50vh;
+}
+
+/* hero-section start */
+#hero-section {
+    background-color: var(--primary-color);
+}
+/* hero-section end */
+
+/* service-section start */
+
+/* service-section end */
+
+/* testimonial-section start */
+#testimonial-section {
+    background-color: var(--secondry-color);
+}
+/* testimonial-section end */
