@@ -131,6 +131,12 @@ h3 {
     color: var(--text-s-color);
 }
 
+h4 {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-mid);
+    font-weight: var(--fw-ebold);
+    color:var(--text-p-color)
+}
 #hero-section p {
     font-family: var(--ff-primary);
     font-size:var(--fs-sml);
@@ -164,6 +170,12 @@ h3 {
     font-size: var(--fs-mid);
     font-weight: var(--fw-ebold);
     font-family: var(--ff-primary);
+}
+
+#cta-section p {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-sml);
+    color:var(--text-t-color);
 }
 
 /* hero-section start */
@@ -276,3 +288,31 @@ h3 {
     text-align: end;
 }
 /* testimonial-section end */
+
+
+/* cta-section start */
+#cta-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cta-section .cta-box {
+    background-color: var(--tertiary-color);
+    height: 20vh;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+#cta-section button {
+    background-color: var(--tertiary-color);
+    margin-top: 10px;
+    height: 40px;
+    width: 120px;
+    border: 2px solid var(--text-p-color);
+    border-radius: 10px;
+}
+/* cta-section end */
