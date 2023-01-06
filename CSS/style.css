@@ -178,6 +178,12 @@ h4 {
     color:var(--text-t-color);
 }
 
+#primary-footer a{
+    font-family: var(--ff-primary);
+    font-size: var(--fs-sml);
+    color: var(--text-p-color);
+}
+
 /* hero-section start */
 #hero-section {
     background-color: var(--primary-color);
@@ -316,3 +322,18 @@ h4 {
     border-radius: 10px;
 }
 /* cta-section end */
+
+
+/* footer start */
+#primary-footer {
+    background-color:var(--primary-color);
+    height: 10vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#primary-footer a {
+    text-decoration: none;
+}
+/* footer end */
