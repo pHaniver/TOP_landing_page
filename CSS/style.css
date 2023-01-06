@@ -124,6 +124,13 @@ h1 {
     line-height: 1.2;
 }
 
+h3 {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-big);
+    font-weight: var(--fw-ebold);
+    color: var(--text-s-color);
+}
+
 #hero-section p {
     font-family: var(--ff-primary);
     font-size:var(--fs-sml);
@@ -135,6 +142,12 @@ h1 {
     font-family: var(--ff-primary);
     font-size: var(--fs-sml);
     color:var(--text-t-color)
+}
+
+#service-section p {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-sml);
+    color: var(--text-s-color)
 }
 
 /* hero-section start */
@@ -188,7 +201,7 @@ h1 {
 }
 
 #hero-section .hero-img span {
-    background-color: grey;
+    background-color: gray;
     height: 60%;
     width: 80%;
     display:flex;
@@ -201,6 +214,36 @@ h1 {
 }
 
 /* hero-section end */
+
+/* service-section start */
+#service-section {
+    padding-top: 50px;
+}
+
+#service-section h3 {
+    text-align: center;
+}
+
+#service-section .service-container {
+    margin-top: 50px;
+    padding: 0 10%;
+    display:flex;
+    gap: 40px;
+}
+
+#service-section .service-container .service-img {
+    display:block;
+    height: 200px;
+    border: 4px solid var(--tertiary-color);
+    border-radius: 20px;
+}
+
+#service-section .service-container p {
+    margin-top: 10px; 
+    text-align: center;
+}
+/* service-section end */
+
 
 /* testimonial-section start */
 #testimonial-section {
