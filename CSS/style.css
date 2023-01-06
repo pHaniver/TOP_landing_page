@@ -71,27 +71,136 @@ svg {
     --primary-color: #1F2937;
     --secondry-color: #E5E7EB;
     --tertiary-color: #3882F6;
+
+    --text-p-color: #F9FAF8;
+    --text-s-color: #1F2937;
+    --text-t-color: #E5E7EB;
+
+    --ff-primary: sans-serif;
+
+    --fs-ultra: 48px;
+    --fs-big: 36px;
+    --fs-mid: 24px;
+    --fs-sml: 18px;
+
+    --fw-ebold: bolder;
+    --fw-light: light;
 }
 
 /* Universal */
-
 .container {
-    margin: 0 14%;
+    margin: 0 20%;
 }
 
 section {
     height: 50vh;
 }
 
+/* font */
+.logo {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-mid);
+    font-weight:var(--fw-ebold);
+    color: var(--text-p-color);
+}
+
+nav a {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-sml);
+    color:var(--text-t-color);
+}
+
+button {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-ebold);
+    color:var(--text-t-color) 
+}
+
+h1 {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-ultra);
+    font-weight: var(--fw-ebold);
+    color:var(--text-p-color);
+    line-height: 1.2;
+}
+
+#hero-section p {
+    font-family: var(--ff-primary);
+    font-size:var(--fs-sml);
+    color:var(--text-t-color);
+    line-height: 1.2;
+}
+
+#hero-section span {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-sml);
+    color:var(--text-t-color)
+}
+
 /* hero-section start */
 #hero-section {
     background-color: var(--primary-color);
 }
+
+#hero-section nav {
+    height: 8vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#hero-section nav ul {
+    list-style: none;
+    display:flex;
+    gap: 20px;
+}
+
+#hero-section nav li a {
+    text-decoration: none;
+}
+
+#hero-section .hero-box {
+    height: 42vh;
+    display:flex;
+    align-items: center;
+    gap: 100px;
+}
+
+#hero-section .hero-box .hero-content {
+    flex:1;
+}
+
+#hero-section .hero-content button {
+    background-color: var(--tertiary-color);
+    margin-top: 10px;
+    height: 40px;
+    width: 120px;
+    border:none;
+    border-radius: 10px;
+}
+
+#hero-section .hero-box .hero-img {
+    height: 100%;
+    flex: 2;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#hero-section .hero-img span {
+    background-color: grey;
+    height: 60%;
+    width: 80%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero-section .hero-img img {
+    margin-left: auto;
+}
+
 /* hero-section end */
-
-/* service-section start */
-
-/* service-section end */
 
 /* testimonial-section start */
 #testimonial-section {
