@@ -1,2 +1,2 @@
 # TOP_landing_page
-This is Foundation Landing page project of The Odin Project
+This is foundation landing page project of The Odin Project
